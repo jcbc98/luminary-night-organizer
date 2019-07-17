@@ -30,6 +30,7 @@ gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
 gem 'pundit'
+gem 'workflow-activerecord', '>= 4.1', '< 6.0'
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'
