@@ -11,6 +11,12 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     authorize @user
   end
+  
+  def edit
+    @user = User.find(params[:id])
+    authorize @user, :update?
+    render partial: @user
+  end
 
   def update
     @user = User.find(params[:id])
